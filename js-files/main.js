@@ -1,4 +1,4 @@
-import render from "functions/render.js"
+import {render} from "./functions/render.js"
 let map = JSON.parse("./json-files/map.json");
 let Render = render;
 let components = JSON.parse(map.component);

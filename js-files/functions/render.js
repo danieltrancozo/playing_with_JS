@@ -1,4 +1,4 @@
-function render(place,components){
+export function render(place,components){
     let place = document.getElementById(place);
     let component = document.createElement(components.tag);
     this.component.class = components.class;
