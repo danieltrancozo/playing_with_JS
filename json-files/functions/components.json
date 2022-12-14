@@ -1,0 +1,6 @@
+{
+    "function":{
+        "arguments":"place, components",
+        "body": "let nest = document.getElementById(place); let component = document.createElement(components.tag); this.component.class = components.class; this.component.id = components.id; this.component.style = components.style; nest.appendChild(this.component)"
+    }
+}
