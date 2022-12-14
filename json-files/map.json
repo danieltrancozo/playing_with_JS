@@ -1,6 +1,6 @@
 [{
     "components":{
-        "model":"./json-files/models/components.json",
-        "function":"./json-files/functions/components.json"
+        "model":"json-files/models/components.json",
+        "function":"json-files/functions/components.json"
     }
 }]
