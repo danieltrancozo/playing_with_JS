@@ -9,6 +9,7 @@ onload(onloadFunctions());
 function onloadFunctions(){
     componentConstructor.tag = "h1";
     componentConstructor.class = null;
-    componentConstructor.id = "hello_world"
-    componentConstructor.style = "color: red; backgroundColor: yellow;"
+    componentConstructor.id = "hello_world";
+    componentConstructor.style = "color: red; backgroundColor: yellow;";
+    componentRender("root",componentConstructor);
 }
