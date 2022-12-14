@@ -1,5 +1,3 @@
 {
-    "functions":{
-        "type": "render"
-    }
+    "type": "render"
 }
