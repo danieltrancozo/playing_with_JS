@@ -1,4 +1,4 @@
-let map = JSON.parse("json-files/map.json");
+let map = JSON.parse("playing_with_JS/json-files/map.json");
 let componentFunction = JSON.parse(map.components.function);
 let componentModel = JSON.parse(map.components.model);
 let componentConstructor = new componentModel;
