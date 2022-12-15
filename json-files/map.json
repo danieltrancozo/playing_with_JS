@@ -1,6 +1,6 @@
 [{
     "components":{
-        "model":"playing_with_JS/json-files/models/components.json",
-        "function":"playing_with_JS/json-files/functions/components.json"
+        "model":"https://danieltrancozo.github.io/playing_with_JS/json-files/models/components.json",
+        "function":"https://danieltrancozo.github.io/playing_with_JS/json-files/functions/components.json"
     }
 }]
