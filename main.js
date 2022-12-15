@@ -14,13 +14,27 @@ function requests(adress){
     request.send();
 }
 
-function main(){
+function loadmap(){
     requests(mapadress);
     map = res;
-    requests(map[0].components.model);
-    componentModel = res[0];
-    requests(map[0].components.function);
-    componentFunction = new Function(res[0].function.arguments, res[0].function.body)
+}
+
+function loadComponentModel(){
+    requests(map.components.model);
+    componentModel = res;
+}
+
+function laodComponentFunction(){
+    let f;
+    requests(map.components.function);
+    f = res.function;
+    componentFunction = new Function(f.arguments, f.body);
+}
+
+function main(){
+    loadmap();
+    loadComponentModel();
+    laodComponentFunction();
     start();
 }
 
@@ -30,5 +44,3 @@ function start(){
     componentModel.id = "hello_world"
     componentModel.style = "color: red; backgroundColor: yellow;"
 }
-
-onload(main());
